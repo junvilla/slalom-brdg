@@ -4,7 +4,7 @@
 ### BridgeCTL Description ###
 This module downloads and installs Tableau BridgeCTL. It will do the following:
 - download the latest bridgectl zip pkg from the github releases
-- install pip modules 
+- install pip modules TEST
 - create a shortcut command 'bridgectl' on mac, windows, or linux shell
 - start bridgectl
 Note that this script only uses libraries from the Python standard library so that it will work on a clean install of Python.
