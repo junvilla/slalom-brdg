@@ -1,5 +1,0 @@
-Project ID,Project Name,Capability,Grantee Type,Permission Type,Grantee Name
-1281f50a-9a16-42cd-b1a6-9380750fa16e,default,"{'Read': 'Allow', 'Write': 'Allow'}",group,Project,Atlanta
-1281f50a-9a16-42cd-b1a6-9380750fa16e,default,{'InheritedProjectLeader': 'Allow'},user,Project,testuser@slalom.com
-1281f50a-9a16-42cd-b1a6-9380750fa16e,default,"{'InheritedProjectLeader': 'Allow', 'ProjectLeader': 'Allow', 'Write': 'Allow', 'Read': 'Allow'}",user,Project,testuser@slalom.com
-1281f50a-9a16-42cd-b1a6-9380750fa16e,default,"{'Read': 'Allow', 'Write': 'Allow', 'Filter': 'Allow', 'ViewUnderlyingData': 'Allow', 'ExportImage': 'Allow', 'ExportData': 'Allow', 'AddComment': 'Allow', 'ViewComments': 'Allow', 'Delete': 'Allow', 'ChangePermissions': 'Allow', 'ExportXml': 'Allow', 'ChangeHierarchy': 'Allow', 'ShareView': 'Allow', 'WebAuthoring': 'Allow', 'CreateRefreshMetrics': 'Allow'}",user,Workbook,testuser@slalom.com
