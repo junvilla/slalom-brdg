@@ -22,7 +22,7 @@ from urllib.error import HTTPError
 from urllib.request import urlopen
 from pathlib import Path
 
-TARGET_GITHUB_REPO = "Tab-SE/BridgeCTL"
+TARGET_GITHUB_REPO = "junvilla/slalom-brdg"
 LATEST_VERSION = "2.5.9"
 def is_internalbuild():
     return TARGET_GITHUB_REPO.endswith("tableautest.com")
@@ -150,7 +150,7 @@ else:
         with open(local_zip_dest, 'wb') as f:
             f.write(response_pkg.read())
     else:
-        download_setup_pkg_url = f"https://github.com/{TARGET_GITHUB_REPO}/releases/download/{LATEST_VERSION}/{zip_filename}"
+        download_setup_pkg_url = f"https://github.com/{TARGET_GITHUB_REPO}/blob/master/slalom-consulting-bridgectl/{zip_filename}"
         print(f"downloading pkg from {download_setup_pkg_url}")
         response_pkg = urlopen_with_retry(download_setup_pkg_url)
         with open(local_zip_dest, 'wb') as f:
