@@ -1,0 +1,36 @@
+#  Template python-build
+
+#  This template allows you to validate your python code.
+#  The workflow allows running tests and code linting on the default branch.
+
+image: python:3.9
+
+definitions:
+  steps:
+    - step: &Lint
+      name: Linting
+      script:
+          - pip install flake8
+          - flake8 --ignore=E203,W503
+    - step: &Formatter
+      name: Formatter
+      script:
+          - pip install black
+          - black -l 88.
+    - step: &Test
+      name: Test
+      script:
+          - pip install pytest
+          - pytest -v
+
+
+
+pipelines:
+  default:
+    parallel:
+      - step: *Lint
+      - step: *Test
+  branches:
+    master:
+      - step: *Lint
+      - step: *Test
